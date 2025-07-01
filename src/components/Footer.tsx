@@ -23,7 +23,7 @@ export function Footer() {
           © 2025 Todos los derechos reservados.
         </p>
         <p style={{ marginBottom: '0.5rem' }}>
-          <a href="mailto:info@yourstore.com" style={linkStyle}>info@mail.com</a> | 
+          <a href="mailto:tototecnologiabb@gmail.com" style={linkStyle}>tototecnologiabb@gmail.com</a> | 
           <span> Fitz Roy y Teniente Farias </span>
         </p>
       </div>
