@@ -24,7 +24,7 @@ export function Footer() {
         </p>
         <p style={{ marginBottom: '0.5rem' }}>
           <a href="mailto:info@yourstore.com" style={linkStyle}>info@mail.com</a> | 
-          <span> Alem 1879</span>
+          <span> Fitz Roy y Teniente Farias </span>
         </p>
       </div>
     </footer>
