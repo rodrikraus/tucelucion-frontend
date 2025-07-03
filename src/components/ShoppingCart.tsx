@@ -4,6 +4,7 @@ import { CartItem } from "./CartItem";
 import { formatCurrency } from "../utilities/formatCurrency";
 import { useState } from "react";
 import { CheckoutModal } from "./CheckoutModal";
+import { API_URL } from "../environment/Environment";
 
 type ShoppingCartProps = {
     isOpen: boolean
@@ -68,7 +69,7 @@ export function ShoppingCart({isOpen}: ShoppingCartProps) {
         };
 
         try {
-            const response = await fetch("http://localhost:8080/api/compras", {
+            const response = await fetch(`${API_URL}/compras`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

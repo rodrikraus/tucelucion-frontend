@@ -2,6 +2,7 @@ import { createContext, useContext, useState, useEffect } from "react"
 import type { ReactNode } from "react"
 import { ShoppingCart } from "../components/ShoppingCart"
 import { useLocalStorage } from "../hooks/useLocalStorage"
+import { API_URL } from "../environment/Environment";
 
 type ShoppingCartProviderProps = {
     children: ReactNode
@@ -57,7 +58,7 @@ export function ShoppingCartProvider({ children }:ShoppingCartProviderProps) {
         setProductsLoading(true);
         setProductsError(null);
         try {
-            const response = await fetch("http://localhost:8080/api/productos");
+            const response = await fetch(`${API_URL}/productos`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
