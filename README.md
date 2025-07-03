@@ -1,6 +1,6 @@
 # Ecommerce Project
 
-This is a template for an ecommerce application.
+This is a working ecommerce application that the company "TuCelucion" currently uses.
 
 ## Technologies Used
 
@@ -74,5 +74,3 @@ In the project directory, you can run the following scripts:
     Serves the production build locally to preview it before deployment. This command should be run after `npm run build`.
 
 ---
-
-This README provides a comprehensive overview of the project, its technologies, structure, and how to get it running.
