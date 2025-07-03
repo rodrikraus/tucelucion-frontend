@@ -1,5 +1,5 @@
 //production
-export const API_URL = "https://tucelucion-891669190388.southamerica-east1.run.app";
+export const API_URL = "https://tucelucion-891669190388.southamerica-east1.run.app/api";
 //export const API_URL = "https://tucelucion-deployment.onrender.com/api";
 
 //development
