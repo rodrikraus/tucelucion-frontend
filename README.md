@@ -1,54 +1,78 @@
-# React + TypeScript + Vite
+# Ecommerce Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a template for an ecommerce application.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React:** A JavaScript library for building user interfaces.
+- **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
+- **Vite:** A fast build tool and development server for modern web projects.
+- **React Bootstrap:** Bootstrap components built for React.
+- **React Router:** A library for declarative routing in React applications.
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **`public/`**: Contains static assets like images and the `index.html` file.
+- **`src/`**: Contains the main source code for the application.
+  - **`components/`**: Reusable UI components.
+  - **`context/`**: React Context for global state management (e.g., shopping cart).
+  - **`hooks/`**: Custom React hooks.
+  - **`pages/`**: Top-level page components.
+  - **`utilities/`**: Helper functions and utilities.
+  - **`environment/`**: Environment-specific configurations.
+  - **`main.tsx`**: The entry point of the application.
+  - **`App.tsx`**: The root component of the application, setting up routing.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Prerequisites
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Node.js (version 18.x or higher recommended)
+- npm (comes with Node.js) or yarn
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Installation & Running Locally
+
+1.  **Clone the repository (if you haven't already):**
+    ```bash
+    git clone <repository-url>
+    cd <project-directory>
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+    or if you prefer yarn:
+    ```bash
+    yarn install
+    ```
+
+3.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+    or
+    ```bash
+    yarn dev
+    ```
+    This will start the development server, typically at `http://localhost:5173`.
+
+## Available Scripts
+
+In the project directory, you can run the following scripts:
+
+-   **`npm run dev` or `yarn dev`**:
+    Runs the app in development mode. Open [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal) to view it in the browser. The page will reload if you make edits.
+
+-   **`npm run build` or `yarn build`**:
+    Builds the app for production to the `dist` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build process includes type checking with TypeScript.
+
+-   **`npm run lint` or `yarn lint`**:
+    Lints the project files using ESLint to check for code quality and style issues.
+
+-   **`npm run preview` or `yarn preview`**:
+    Serves the production build locally to preview it before deployment. This command should be run after `npm run build`.
+
+---
+
+This README provides a comprehensive overview of the project, its technologies, structure, and how to get it running.
